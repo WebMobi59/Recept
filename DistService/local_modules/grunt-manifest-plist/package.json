@@ -1,0 +1,11 @@
+{
+  "name": "grunt-manifest-plist",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "tasks"
+  ],
+  "dependencies": {
+    "plist": "^1.1.0"
+  }
+}

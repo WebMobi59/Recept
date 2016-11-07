@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExternalUrlViewController" customModule="Recept" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="T62-he-I1R" id="ehx-8r-AYk"/>
+                <outlet property="footerContainer" destination="mNj-Tk-Nzo" id="sTx-3H-1Kl"/>
+                <outlet property="header" destination="pbs-Le-nTj" id="08N-rl-Xgs"/>
+                <outlet property="headerContainer" destination="yqs-XB-OkU" id="KrU-Mq-N4r"/>
+                <outlet property="navigateLeft" destination="AlH-o9-D5k" id="sAA-Dr-vQu"/>
+                <outlet property="navigateRight" destination="bSW-Rb-0RX" id="yZN-pX-ntz"/>
+                <outlet property="topSeparatorLine" destination="QP3-h2-aYb" id="PM4-Kf-Ik6"/>
+                <outlet property="view" destination="iN0-l3-epB" id="mnW-Qs-hgR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqs-XB-OkU">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T62-he-I1R" userLabel="X" customClass="CloseButton" customModule="Recept" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="A6K-2s-28A"/>
+                                <constraint firstAttribute="width" secondItem="T62-he-I1R" secondAttribute="height" multiplier="1:1" id="J5M-tx-Q5F"/>
+                            </constraints>
+                            <state key="normal" title="X">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="didTapCloseButton:" destination="-1" eventType="touchUpInside" id="9ya-oX-pHL"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QP3-h2-aYb" userLabel="TopSeparator">
+                            <color key="backgroundColor" red="0.88583096589999999" green="0.88583096589999999" blue="0.88583096589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="7sg-Er-OTh"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbs-Le-nTj" customClass="HeaderLabel" customModule="Recept" customModuleProvider="target">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="QP3-h2-aYb" firstAttribute="leading" secondItem="yqs-XB-OkU" secondAttribute="leading" id="2Ms-jS-yLq"/>
+                        <constraint firstItem="pbs-Le-nTj" firstAttribute="centerY" secondItem="T62-he-I1R" secondAttribute="centerY" id="7NF-4d-wEe"/>
+                        <constraint firstAttribute="trailing" secondItem="T62-he-I1R" secondAttribute="trailing" constant="9" id="Ewa-at-4zM"/>
+                        <constraint firstAttribute="bottom" secondItem="T62-he-I1R" secondAttribute="bottom" constant="9" id="fKM-fx-dnV"/>
+                        <constraint firstItem="T62-he-I1R" firstAttribute="leading" secondItem="pbs-Le-nTj" secondAttribute="trailing" constant="9" id="gpI-56-tvi"/>
+                        <constraint firstItem="pbs-Le-nTj" firstAttribute="leading" secondItem="yqs-XB-OkU" secondAttribute="leading" constant="58" id="igZ-NX-a1z"/>
+                        <constraint firstAttribute="height" constant="71" id="qfY-qL-r56"/>
+                        <constraint firstAttribute="bottom" secondItem="QP3-h2-aYb" secondAttribute="bottom" id="sPs-RJ-67j"/>
+                        <constraint firstAttribute="trailing" secondItem="QP3-h2-aYb" secondAttribute="trailing" id="w3q-SY-diU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mNj-Tk-Nzo">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JYU-w2-mBF" userLabel="BottomSeparator">
+                            <color key="backgroundColor" red="0.88583096589999999" green="0.88583096589999999" blue="0.88583096589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ry6-0P-Jdy"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AlH-o9-D5k" customClass="ArrowButtonLeft" customModule="Recept" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4kA-7Z-V5x"/>
+                                <constraint firstAttribute="width" secondItem="AlH-o9-D5k" secondAttribute="height" multiplier="1:1" id="paH-Pl-5It"/>
+                            </constraints>
+                            <state key="normal" title="&lt;"/>
+                            <connections>
+                                <action selector="didNavigateLeft:" destination="-1" eventType="touchUpInside" id="9WE-70-gne"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSW-Rb-0RX" customClass="ArrowButtonRight" customModule="Recept" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="TWY-oe-1yd"/>
+                                <constraint firstAttribute="width" secondItem="bSW-Rb-0RX" secondAttribute="height" multiplier="1:1" id="vbh-OV-lji"/>
+                            </constraints>
+                            <state key="normal" title="&gt;"/>
+                            <connections>
+                                <action selector="didNavigateRight:" destination="-1" eventType="touchUpInside" id="I4r-YX-GkT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="JYU-w2-mBF" firstAttribute="top" secondItem="mNj-Tk-Nzo" secondAttribute="top" id="39f-ah-3fW"/>
+                        <constraint firstItem="bSW-Rb-0RX" firstAttribute="centerY" secondItem="mNj-Tk-Nzo" secondAttribute="centerY" id="Bag-Sr-yC1"/>
+                        <constraint firstAttribute="trailing" secondItem="bSW-Rb-0RX" secondAttribute="trailing" constant="9" id="FYI-Mh-nYm"/>
+                        <constraint firstItem="JYU-w2-mBF" firstAttribute="leading" secondItem="mNj-Tk-Nzo" secondAttribute="leading" id="K6I-Yr-WRE"/>
+                        <constraint firstAttribute="height" constant="58" id="fu2-Ud-6rj"/>
+                        <constraint firstAttribute="trailing" secondItem="JYU-w2-mBF" secondAttribute="trailing" id="iw0-ww-4Zl"/>
+                        <constraint firstItem="AlH-o9-D5k" firstAttribute="leading" secondItem="mNj-Tk-Nzo" secondAttribute="leading" constant="9" id="s9e-Fz-WOd"/>
+                        <constraint firstItem="AlH-o9-D5k" firstAttribute="centerY" secondItem="mNj-Tk-Nzo" secondAttribute="centerY" id="siK-ai-KuE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="mNj-Tk-Nzo" secondAttribute="trailing" id="8eL-0c-eqi"/>
+                <constraint firstAttribute="trailing" secondItem="yqs-XB-OkU" secondAttribute="trailing" id="Ng5-NE-GeJ"/>
+                <constraint firstItem="yqs-XB-OkU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QHB-wV-vte"/>
+                <constraint firstItem="mNj-Tk-Nzo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RfG-l1-jlr"/>
+                <constraint firstAttribute="bottom" secondItem="mNj-Tk-Nzo" secondAttribute="bottom" id="WBa-Xq-fDo"/>
+                <constraint firstItem="yqs-XB-OkU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fGa-Oj-ZrY"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

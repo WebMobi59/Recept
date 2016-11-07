@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sx7-zM-pyk">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cz-Tv-y9Q" userLabel="Main">
+                    <rect key="frame" x="0.0" y="180" width="320" height="220"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nvm-oS-qXj">
+                            <rect key="frame" x="60" y="8" width="200" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="SiV-m6-JII"/>
+                                <constraint firstAttribute="height" constant="38" id="mdM-OG-8MN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Nvm-oS-qXj" secondAttribute="centerX" id="J6K-U2-xmA"/>
+                        <constraint firstItem="Nvm-oS-qXj" firstAttribute="top" secondItem="6Cz-Tv-y9Q" secondAttribute="top" constant="8" id="PGY-CF-8fI"/>
+                        <constraint firstAttribute="width" constant="320" id="wWy-Hk-992"/>
+                        <constraint firstAttribute="height" constant="220" id="ycs-df-FW3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6Cz-Tv-y9Q" firstAttribute="top" secondItem="Sx7-zM-pyk" secondAttribute="top" constant="180" id="VFw-z4-nwM"/>
+                <constraint firstAttribute="centerX" secondItem="6Cz-Tv-y9Q" secondAttribute="centerX" id="sr5-ZG-h5z"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="825" y="91"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch-logo.png" width="200" height="38"/>
+    </resources>
+</document>

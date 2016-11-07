@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LockUIViewController" customModule="Recept" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="8PG-lB-gsj" id="IJO-kH-G3h"/>
+                <outlet property="spinner" destination="oXh-UJ-zq7" id="P8R-4K-lmL"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uhE-5c-NAy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pg0-1o-cBF" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="oXh-UJ-zq7">
+                    <rect key="frame" x="141" y="222" width="37" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="Gbd-MB-Mbv"/>
+                        <constraint firstAttribute="width" secondItem="oXh-UJ-zq7" secondAttribute="height" multiplier="1:1" id="bMP-KI-2he"/>
+                    </constraints>
+                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processar saker..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-lB-gsj" customClass="LockUILabel" customModule="Recept" customModuleProvider="target">
+                    <rect key="frame" x="60" y="285" width="200" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="GFc-gi-T4z"/>
+                        <constraint firstAttribute="width" constant="200" id="xaD-5F-cFl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="oXh-UJ-zq7" secondAttribute="centerY" constant="44" id="4mX-Xx-1jF"/>
+                <constraint firstAttribute="centerX" secondItem="oXh-UJ-zq7" secondAttribute="centerX" id="S04-Tc-I3Y"/>
+                <constraint firstItem="pg0-1o-cBF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="p13-JS-y60"/>
+                <constraint firstItem="pg0-1o-cBF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="spA-v8-5Kj"/>
+                <constraint firstAttribute="bottom" secondItem="pg0-1o-cBF" secondAttribute="bottom" id="tzm-lP-sGi"/>
+                <constraint firstAttribute="trailing" secondItem="pg0-1o-cBF" secondAttribute="trailing" id="wDA-lR-Cn3"/>
+                <constraint firstAttribute="centerX" secondItem="8PG-lB-gsj" secondAttribute="centerX" id="wxq-lY-zrO"/>
+                <constraint firstItem="8PG-lB-gsj" firstAttribute="top" secondItem="oXh-UJ-zq7" secondAttribute="bottom" constant="26" id="xdK-5d-5mY"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

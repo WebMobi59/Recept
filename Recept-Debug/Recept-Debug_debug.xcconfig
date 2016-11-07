@@ -1,0 +1,2 @@
+#include "Recept-Debug/Recept-Debug_base.xcconfig"
+CODE_SIGN_IDENTITY = iPhone Developer

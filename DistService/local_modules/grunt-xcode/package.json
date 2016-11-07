@@ -1,0 +1,66 @@
+{
+  "name": "grunt-xcode",
+  "description": "Build and export Xcode projects with Grunt",
+  "version": "2.2.0",
+  "homepage": "https://github.com/matiassingers/grunt-xcode",
+  "author": {
+    "name": "Matias Singers",
+    "email": "mail@matiassingers.com",
+    "url": "http://mts.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matiassingers/grunt-xcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matiassingers/grunt-xcode/issues"
+  },
+  "licenses": "MIT",
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt -v"
+  },
+  "dependencies": {
+    "bluebird": "~2.3.4",
+    "temporary": "0.0.8",
+    "chalk": "~0.5.1",
+    "which": "~1.0.5"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-nodeunit": "~0.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "grunt",
+    "gruntplugin",
+    "xcode",
+    "iOS"
+  ],
+  "_id": "grunt-xcode@2.2.0",
+  "dist": {
+    "shasum": "9124e2d514f314eb23547dc94dacc71eb6b3e9d9",
+    "tarball": "http://registry.npmjs.org/grunt-xcode/-/grunt-xcode-2.2.0.tgz"
+  },
+  "_from": "grunt-xcode@*",
+  "_npmVersion": "1.3.21",
+  "_npmUser": {
+    "name": "matiassingers",
+    "email": "mail@matiassingers.com"
+  },
+  "maintainers": [
+    {
+      "name": "matiassingers",
+      "email": "mail@matiassingers.com"
+    }
+  ],
+  "directories": {},
+  "_shasum": "9124e2d514f314eb23547dc94dacc71eb6b3e9d9",
+  "_resolved": "https://registry.npmjs.org/grunt-xcode/-/grunt-xcode-2.2.0.tgz"
+}

@@ -1,0 +1,3 @@
+#include "Recept-Debug/Recept-Debug_base.xcconfig"
+COPY_PHASE_STRIP = YES
+PROVISIONING_PROFILE = ab8c4459-db24-41b1-a125-b4ee21452e08

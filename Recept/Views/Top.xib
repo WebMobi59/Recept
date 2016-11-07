@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="Recept" customModuleProvider="target">
+            <connections>
+                <outlet property="basketButton" destination="HZP-3k-T2F" id="3mG-ui-wbf"/>
+                <outlet property="drawerToggleButton" destination="2FH-0T-uSs" id="NrD-Xh-Sjp"/>
+                <outlet property="logoButton" destination="6Qh-nE-vic" id="pKy-Oh-A2R"/>
+                <outlet property="topSeparatorLine" destination="IZN-i7-lOx" id="9G7-3Q-7Cw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fj7-Xm-616"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-ym-Qp3">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qh-nE-vic" customClass="LogoButton" customModule="Recept" customModuleProvider="target">
+                            <rect key="frame" x="9" y="31" width="117" height="22"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="117" id="C4J-In-sZ2"/>
+                                <constraint firstAttribute="width" secondItem="6Qh-nE-vic" secondAttribute="height" multiplier="117:22" id="t7d-yl-1Vd"/>
+                            </constraints>
+                            <state key="normal" title="L"/>
+                            <connections>
+                                <action selector="logoTap:" destination="-1" eventType="touchUpInside" id="alG-do-igm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FH-0T-uSs" customClass="DrawerButton" customModule="Recept" customModuleProvider="target">
+                            <rect key="frame" x="271" y="22" width="40" height="40"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2FH-0T-uSs" secondAttribute="height" multiplier="1:1" id="cb9-q7-ku0"/>
+                                <constraint firstAttribute="height" constant="40" id="jQq-sR-Ak2"/>
+                            </constraints>
+                            <state key="normal" title="M">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="drawerTap:" destination="-1" eventType="touchUpInside" id="lHu-QX-OzE"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZN-i7-lOx">
+                            <rect key="frame" x="0.0" y="70" width="320" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.88583096589999999" green="0.88583096589999999" blue="0.88583096589999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EwP-rB-ZDT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-o3-E1r">
+                            <rect key="frame" x="140" y="22" width="117" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZP-3k-T2F" customClass="BasketView" customModule="Recept" customModuleProvider="target">
+                                    <rect key="frame" x="87" y="0.0" width="30" height="40"/>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="3Dl-Eq-rQc"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="c1T-Nv-qkg"/>
+                                    </constraints>
+                                    <state key="normal" title="B">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="basketTap:" destination="-1" eventType="touchUpInside" id="P17-Xi-1WF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UKG-cc-RYi"/>
+                                <constraint firstAttribute="trailing" secondItem="HZP-3k-T2F" secondAttribute="trailing" id="j5a-kg-2zg"/>
+                                <constraint firstItem="HZP-3k-T2F" firstAttribute="top" secondItem="eyc-o3-E1r" secondAttribute="top" id="yH6-8U-f8o"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IZN-i7-lOx" firstAttribute="leading" secondItem="h0y-ym-Qp3" secondAttribute="leading" id="3M0-dz-gOT"/>
+                        <constraint firstAttribute="trailing" secondItem="IZN-i7-lOx" secondAttribute="trailing" id="88q-Ni-hf3"/>
+                        <constraint firstAttribute="height" constant="71" id="CKu-bh-UY2"/>
+                        <constraint firstAttribute="trailing" secondItem="2FH-0T-uSs" secondAttribute="trailing" constant="9" id="VrG-Rj-9M5"/>
+                        <constraint firstAttribute="bottom" secondItem="6Qh-nE-vic" secondAttribute="bottom" constant="18" id="Vyd-Fx-eQX"/>
+                        <constraint firstAttribute="bottom" secondItem="eyc-o3-E1r" secondAttribute="bottom" constant="9" id="WGZ-7h-RZa"/>
+                        <constraint firstItem="6Qh-nE-vic" firstAttribute="leading" secondItem="h0y-ym-Qp3" secondAttribute="leading" constant="9" id="fgd-Xj-Z8H"/>
+                        <constraint firstAttribute="bottom" secondItem="IZN-i7-lOx" secondAttribute="bottom" id="iXG-EZ-anv"/>
+                        <constraint firstItem="2FH-0T-uSs" firstAttribute="leading" secondItem="eyc-o3-E1r" secondAttribute="trailing" constant="14" id="pbU-Nj-QQl"/>
+                        <constraint firstAttribute="bottom" secondItem="2FH-0T-uSs" secondAttribute="bottom" constant="9" id="tqt-zX-JMv"/>
+                        <constraint firstItem="eyc-o3-E1r" firstAttribute="leading" secondItem="6Qh-nE-vic" secondAttribute="trailing" constant="14" id="ua6-hW-1fb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="h0y-ym-Qp3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y8t-CJ-eeV"/>
+                <constraint firstAttribute="trailing" secondItem="h0y-ym-Qp3" secondAttribute="trailing" id="bAi-yx-Vou"/>
+                <constraint firstItem="h0y-ym-Qp3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="g8s-WA-dkd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="395" y="117.5"/>
+        </view>
+    </objects>
+</document>
